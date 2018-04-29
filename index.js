@@ -1,0 +1,29 @@
+const electron = require('electron');
+const BrowserWindow = electron.BrowserWindow;
+const path = require('path');
+
+require('electron-reload')(path.join(__dirname, 'dist'), { electron: path.join(__dirname, 'node_modules', '.bin', 'electron.cmd') });
+const app = electron.app
+
+app.on('window-all-closed', function () {
+  if (process.platform != 'darwin')
+    app.quit();
+});
+
+app.on('ready', function () {
+  var main_width = 800;
+  var main_height = 600;
+
+  var mainWindow = new BrowserWindow({
+    icon: path.join(__dirname, 'dist', 'favicon.ico'),
+    width: main_width,
+    height: main_height,
+    // frame: false
+  });
+
+  mainWindow.loadURL('file://' + __dirname + '/index.html');
+
+  mainWindow.on('closed', function () {
+    mainWindow = null;
+  });
+});
