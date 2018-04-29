@@ -1,10 +1,14 @@
 {
-  "name": "au-electron",
-  "description": "An Aurelia client application.",
+  "name": "electron-aurelia-cli-starter",
+  "description": "Starter project for an Aurelia-cli client application wrapped with electron.",
   "version": "0.1.0",
+  "author": {
+    "name": "Seishin",
+    "url": "https://github.com/seishin4real"
+  },
   "repository": {
-    "type": "???",
-    "url": "???"
+    "type": "git",
+    "url": "https://github.com/seishin4real/electron-aurelia-cli-starter"
   },
   "license": "MIT",
   "dependencies": {
