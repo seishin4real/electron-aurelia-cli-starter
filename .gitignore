@@ -18,6 +18,7 @@ Thumbs.db
 # Ref: https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
 # Ref: https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
 .idea
+.vs/*
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -29,3 +30,4 @@ node_modules
 
 # Compiled filesE
 dist
+index.html
