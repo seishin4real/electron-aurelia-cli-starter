@@ -1,3 +1,5 @@
+import './styles/index.sass';
+
 // import { remote } from 'electron';
 
 export class App {
